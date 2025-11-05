@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Singapore's Certificate of Entitlement (COE)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #EF4444; /* Red 500 */
+            --secondary-color: #1F2937; /* Gray 800 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f8fc;
+            scroll-behavior: smooth;
+        }
+        .section-heading {
+            border-left: 6px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.open {
+            max-height: 1000px; /* Large enough value to cover content */
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-gray-900">COE: Singapore Explained</h1>
+            <nav class="hidden md:block space-x-6">
+                <a href="#what-is-it" class="text-gray-600 hover:text-red-500 font-medium">What is it?</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-red-500 font-medium">How it Works</a>
+                <a href="#categories" class="text-gray-600 hover:text-red-500 font-medium">Categories</a>
+                <a href="#renewal" class="text-gray-600 hover:text-red-500 font-medium">Renewal</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Introduction Hero Card -->
+        <section class="mb-12 bg-white rounded-xl shadow-2xl p-6 md:p-12 border-t-8 border-red-500">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Your Guide to Singapore's Certificate of Entitlement (COE)</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                The COE is the centerpiece of Singapore's unique policy to manage its vehicle population. It's more than just a certificate—it's the <span class="font-bold text-red-500">mandatory legal right</span> to own and use a vehicle on the country's limited roads for a period of 10 years.
+            </p>
+        </section>
+
+        <!-- 1. What is the COE and Why Does it Exist? -->
+        <section id="what-is-it" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading mb-6 text-gray-800">1. Why Are Cars So Regulated in Singapore?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Card 1: The Rationale of Scarcity -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-red-500 mb-3">🛣️</div>
+                    <h3 class="text-xl font-semibold mb-2">Road Space is a Scarce Resource</h3>
+                    <p class="text-gray-600">Singapore is small and land-scarce. Unrestricted vehicle growth would lead to severe, crippling traffic jams. The COE system is used to set a strict limit on the number of cars allowed on the road, preventing gridlock and keeping the city moving.</p>
+                </div>
+
+                <!-- Card 2: The Economic Cost -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-red-500 mb-3">💰</div>
+                    <h3 class="text-xl font-semibold mb-2">Buyers Pay the Societal Cost</h3>
+                    <p class="text-gray-600">The high cost of the COE compels private buyers to pay for the privilege of using limited public road space. It acts as an economic tool to restrict demand to a level that matches the actual road capacity.</p>
+                </div>
+
+                <!-- Card 3: Funding Public Transport -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-red-500 mb-3">🚇</div>
+                    <h3 class="text-xl font-semibold mb-2">Revenue Funds Public Transport</h3>
+                    <p class="text-gray-600">All the money collected from COE auctions goes into the national fund. This revenue is critically important for continuously funding and subsidizing Singapore's world-class public transport systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. How the System Works: Supply and Bidding -->
+        <section id="how-it-works" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading mb-6 text-gray-800">2. How Do I Get a COE? The Auction Process</h2>
+
+            <!-- Supply Mechanism -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-red-500">The Supply: The "Cut-and-Fill" Principle</h3>
+                <p class="text-gray-700 mb-4">
+                    The number of COEs available (the "quota") is not fixed; it changes. Since private car growth is set at <span class="font-bold">zero percent</span>, the supply is mainly determined by the number of old vehicles that were taken off the road (deregistered) in the recent past.
+                </p>
+                <div class="p-4 bg-gray-100 rounded-lg border-l-4 border-gray-400">
+                    The quota is calculated based on the <span class="font-bold">rolling average of vehicle deregistrations over the preceding four quarters</span>. This smooths out short-term fluctuations in supply. 
+                </div>
+            </div>
+
+            <!-- Bidding Mechanism -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold mb-4 text-red-500">The Bidding: Sealed-Bid, Uniform Price Auction</h3>
+                <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                    <li>COEs are allocated through competitive auctions held <span class="font-bold">twice a month</span>.</li>
+                    <li>When you bid, you submit your <span class="font-bold italic">reserve price</span>—the maximum amount you are willing to pay. This price is secret.</li>
+                    <li>The system accepts bids until the number of remaining bidders equals the number of COEs available in that category.</li>
+                    <li>The final price paid by *all* successful bidders is the <span class="font-bold text-red-500">Quota Premium (QP)</span>.</li>
+                    <li>The QP is always set by the <span class="font-bold">lowest successful bid</span> (the market-clearing price). Even if you bid higher, you only pay this lower QP.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3. The 5 COE Categories -->
+        <section id="categories" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading mb-6 text-gray-800">3. The 5 Categories: What You Can Buy</h2>
+            <p class="text-gray-700 mb-6">The COE system is divided into five categories (A to E) to manage and price different types of vehicles separately.</p>
+
+            <div class="space-y-4">
+                <!-- Category A -->
+                <div class="bg-white rounded-xl shadow-lg p-5">
+                    <button class="flex justify-between items-center w-full font-bold text-lg text-gray-800 focus:outline-none py-2" onclick="toggleAccordion('cat-a')">
+                        Category A: Mass-Market Cars (Small)
+                        <svg id="cat-a-icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="cat-a-content" class="accordion-content">
+                        <div class="pt-4 border-t border-gray-200 mt-2 text-gray-600">
+                            <p class="mb-2"><strong>Target:</strong> Smaller, mass-market vehicles.</p>
+                            <p class="mb-2"><strong>Criteria:</strong> Primarily for cars with an engine capacity of 1,600cc or less AND a power output of 97kW (130bhp) or less. Electric Vehicles (EVs) must have a power output of 110kW (147bhp) or less.</p>
+                            <p class="text-sm italic mt-2 bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+                                **Key Insight:** Due to strong demand for powerful EVs, the Cat A premium has often become very high, challenging the goal of keeping this category affordable for average buyers of smaller petrol cars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category B -->
+                <div class="bg-white rounded-xl shadow-lg p-5">
+                    <button class="flex justify-between items-center w-full font-bold text-lg text-gray-800 focus:outline-none py-2" onclick="toggleAccordion('cat-b')">
+                        Category B: Luxury & Large Cars (Big)
+                        <svg id="cat-b-icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="cat-b-content" class="accordion-content">
+                        <div class="pt-4 border-t border-gray-200 mt-2 text-gray-600">
+                            <p class="mb-2"><strong>Target:</strong> Larger, luxury, and high-performance cars.</p>
+                            <p><strong>Criteria:</strong> Any car that exceeds the power or engine capacity limits of Category A. This category generally commands the highest premiums, reflecting the price buyers are willing to pay for large or high-end vehicles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Categories Summary -->
+                <div class="bg-white rounded-xl shadow-lg p-5">
+                    <button class="flex justify-between items-center w-full font-bold text-lg text-gray-800 focus:outline-none py-2" onclick="toggleAccordion('cat-other')">
+                        Categories C, D, and E (Commercial & Open)
+                        <svg id="cat-other-icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="cat-other-content" class="accordion-content">
+                        <div class="pt-4 border-t border-gray-200 mt-2 text-gray-600 space-y-3">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Category C:</strong> Reserved for Goods Vehicles (vans, lorries) and Buses.</li>
+                                <li><strong>Category D:</strong> Reserved exclusively for Motorcycles.</li>
+                                <li><strong>Category E (Open):</strong> The most flexible category. A COE secured here can be used for *any* vehicle type, excluding motorcycles. It often tracks closely with Cat B prices due to its versatility.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. What Happens After 10 Years? Renewal & Deregistration -->
+        <section id="renewal" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading mb-6 text-gray-800">4. Managing the 10-Year Life: Renewal & Rebates</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Renewal Mechanism -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-red-500">Renewal Cost: The PQP</h3>
+                    <p class="text-gray-700 mb-4">When your COE is about to expire, you do not need to enter the auction again. Instead, you pay the <span class="font-bold italic">Prevailing Quota Premium (PQP)</span>.</p>
+                    <div class="p-4 bg-red-50 border-l-4 border-red-500 rounded-lg">
+                        <p class="font-semibold">How is PQP calculated?</p>
+                        <p class="text-sm">The PQP is the **moving average of the Quota Premiums (QP) from the last three months' successful bids** for your vehicle category. This smoothing provides more price stability for renewal decisions.</p>
+                    </div>
+                </div>
+
+                <!-- Renewal Options -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-red-500">Your Two Renewal Choices</h3>
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead>
+                            <tr>
+                                <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Term</th>
+                                <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Payment</th>
+                                <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Key Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 text-sm">
+                            <tr class="bg-gray-50">
+                                <td class="px-3 py-4 font-medium">5 Years</td>
+                                <td class="px-3 py-4 text-red-500">50% of the PQP</td>
+                                <td class="px-3 py-4 text-gray-600 font-bold">Must be deregistered after 5 years (no further renewal).</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4 font-medium">10 Years</td>
+                                <td class="px-3 py-4 text-red-500">100% of the PQP</td>
+                                <td class="px-3 py-4 text-gray-600">Can be renewed multiple times (no limit for private cars).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Rebates -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mt-6">
+                <h3 class="text-2xl font-semibold mb-4 text-red-500">Deregistration: Getting Your Rebates</h3>
+                <p class="text-gray-700 mb-4">If you deregister your vehicle before its COE expires, you are entitled to two types of financial compensation:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><span class="font-bold">COE Rebate:</span> A refund of the unused portion of the original COE price (QP or PQP) you paid, calculated based on the number of unused months.</li>
+                    <li><span class="font-bold">PARF Rebate:</span> A Preferential Additional Registration Fee rebate (a percentage of the ARF paid initially). This rebate decreases as the car gets older and becomes zero after the 10-year mark.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Challenges and Impact -->
+        <section id="challenges" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading mb-6 text-gray-800">5. COE's Impact: Affordability and Equity</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Equity Tensions -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">The "Regressive Tax" Concern</h3>
+                    <p class="text-gray-600">The COE is often criticized as being a "regressive tax." Because everyone who wins pays the same high market price, the cost disproportionately affects lower and middle-income families, making car ownership largely a luxury reserved for the affluent.</p>
+                </div>
+
+                <!-- Price Volatility -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">Price Volatility and the 10-Year Lag</h3>
+                    <p class="text-gray-600">COE prices swing widely because the supply (quota) is linked to the number of cars deregistered 10 years ago. High demand from dealers and strong economic growth also fuel sudden, sharp price increases.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-6 md:p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2025 COE Policy Analysis. Research based on LTA and governmental sources.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Accordion Toggle -->
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id + '-content');
+            const icon = document.getElementById(id + '-icon');
+            
+            // Toggle open class
+            content.classList.toggle('open');
+
+            // Toggle icon rotation
+            if (content.classList.contains('open')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+
+</body>
+</html>
